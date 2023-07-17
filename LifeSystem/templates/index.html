@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeSystem</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+     <!-- font awesome icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css stylesheet -->
+ 
+</head>
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <form action="/" method="post">
+                {% csrf_token %}
+                <p>Bienvenido!</p>
+                <h1>LifeSystem  <i class="fa-solid fa-chart-line"></i>
+                </h1>
+                <br>
+                <span>Ingrese sus credenciales</span>
+                <div class="infield">
+                    <input type="text" placeholder="Usuario" name="usuario"/>
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" name="contraseña" placeholder="Contraseña" />
+                    <label></label>
+                </div>
+                <button>Hecho</button>
+            </form>
+        </div>
+        <div class="overlay-container" id="overlayCon">
+            <div class="overlay">
+                <i style="color: aliceblue;" class="fa-solid fa-diagram-predecessor"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- js code -->
+    <script src="https://kit.fontawesome.com/60f66db414.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
