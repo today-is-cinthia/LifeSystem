@@ -77,8 +77,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'LifeSystem',
-        'USER': 'admin',
-        'PASSWORD': 'LifeSystem123',
+        'USER': 'root',
+        'PASSWORD': 'cinthia123',
         'HOST': 'localhost',
         'PORT': '3306'
     }
