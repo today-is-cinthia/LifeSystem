@@ -7,6 +7,8 @@ def index(request):
         username = request.POST['usuario']
         password = request.POST['contraseña']
 
+        
+
         print(username,password)
         return redirect('dashboard')
     return render(request, 'index.html')
